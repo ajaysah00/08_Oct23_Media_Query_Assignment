@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.photo{
+    margin: 10px;
+}
+.container{
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+@media screen and (max-width: 800px) {
+    .container .photo{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container img{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo">
+            <img src="https://fastly.picsum.photos/id/33/200/300.jpg?hmac=qR8hcN554jbCl8H5FeRXTKkBc7X5FsPX4CWR8WAQnko" alt="photo1">
+        </div>
+
+        <div class="photo">
+            <img src="https://fastly.picsum.photos/id/33/200/300.jpg?hmac=qR8hcN554jbCl8H5FeRXTKkBc7X5FsPX4CWR8WAQnko" alt="photo2">
+        </div>
+
+        <div class="photo">
+            <img src="https://fastly.picsum.photos/id/33/200/300.jpg?hmac=qR8hcN554jbCl8H5FeRXTKkBc7X5FsPX4CWR8WAQnko" alt="photo3">
+        </div>
+    </div>
+</body>
+</html>
